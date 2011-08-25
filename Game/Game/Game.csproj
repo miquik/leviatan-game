@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39503301-C556-4CC0-A41D-AF0BC13AFD3C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Game</RootNamespace>
+    <AssemblyName>Game</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Jitter, Version=0.1.5.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Jitter.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Dummy.cs" />
+    <Compile Include="GL_Origin.cs" />
+    <Compile Include="GL_Pyramid.cs" />
+    <Compile Include="Woods.cs" />
+    <Compile Include="GL_Pine.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Render\VertexBuffer.cs" />
+    <Compile Include="Render\RenderEngine.cs" />
+    <Compile Include="Render\IndexBuffer.cs" />
+    <Compile Include="Render\Material.cs" />
+    <Compile Include="Render\Renderable.cs" />
+    <Compile Include="Terrain.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\AbstractElement\array_element.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\AbstractElement\control_element.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\AbstractElement\Element.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\AbstractElement\geometric_element.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\AbstractElement\Instance.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\AbstractElement\Library.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\AbstractElement\primitive_element.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\AbstractElement\Resource.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\AbstractElement\transformation_elements.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Animation\animation.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Animation\animation_clip.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Animation\channel.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Animation\instance_animation.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Animation\library_animation_clips.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Animation\library_animations.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Animation\sampler.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Camera\camera.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Camera\imager.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Camera\instance_camera.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Camera\library_cameras.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Camera\optics.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Camera\orthographic.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Camera\perspective.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Camera\Projection.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Controller\controller.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Controller\instance_controller.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Controller\joints.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Controller\library_controllers.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Controller\morph.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Controller\skeleton.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Controller\skin.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Controller\targets.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Controller\vertex_weights.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\accessor.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\bool_array.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\float_array.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\IDREF_array.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\input.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\int_array.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\Name_array.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\param.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\SIDREF_array.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Data Flow\source.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Extensibility\extra.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Extensibility\technique.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\control_vertices.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\geometry.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\instance_geometry.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\library_geometries.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\lines.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\linestrips.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\mesh.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\polygons.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\polylist.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\spline.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\triangles.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\trifans.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\tristrips.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Geometry\vertices.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Lighting\ambient.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Lighting\color.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Lighting\directional.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Lighting\instance_light.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Lighting\library_lights.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Lighting\light.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Lighting\point.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Lighting\spot.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Mathematics\formula.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Mathematics\instance_formula.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Mathematics\library_formulas.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Metadata\asset.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Metadata\COLLADA.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Metadata\contributor.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Metadata\geographic_location.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Parameters\newparam.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Parameters\reference_param.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Parameters\setparam.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Scene\evaluate_scene.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Scene\instance_node.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Scene\instance_visual_scene.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Scene\library_nodes.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Scene\library_visual_scenes.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Scene\node.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Scene\scene.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Scene\visual_scene.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Transform\lookat.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Transform\matrix.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Transform\rotate.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Transform\scale.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Transform\skew.cs" />
+    <Compile Include="Loader\COLLADALoader\Core\Transform\translate.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Effects\annotate.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Effects\bind_vertex_input.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Effects\effect.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Effects\instance_effect.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Effects\library_effect.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Effects\technique_hint.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Materials\bind.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Materials\bind_material.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Materials\instance_materials.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Materials\library_materials.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Materials\material.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Profiles\profile.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Texturing\image.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Texturing\init_from.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Texturing\instance_image.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Texturing\library_image.cs" />
+    <Compile Include="Loader\COLLADALoader\FX\Texturing\sampler.cs" />
+    <Compile Include="Loader\ClampColor.cs" />
+    <Compile Include="Loader\Mesh.cs" />
+    <Compile Include="Loader\Scene.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Meshomatic\Meshomatic.csproj">
+      <Project>{D52F55A8-08E5-488E-AD0F-BF49B1F29A5F}</Project>
+      <Name>Meshomatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Render\" />
+    <Folder Include="Loader\" />
+  </ItemGroup>
+</Project>

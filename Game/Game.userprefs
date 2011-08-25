@@ -1,0 +1,43 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Game\Loader\Mesh.cs">
+    <Files>
+      <File FileName="Game\Loader\COLLADALoader\Core\AbstractElement\array_element.cs" Line="20" Column="1" />
+      <File FileName="Game\Render\VertexBuffer.cs" Line="27" Column="22" />
+      <File FileName="Game\Loader\Mesh.cs" Line="61" Column="5" />
+      <File FileName="Game\Render\IndexBuffer.cs" Line="134" Column="1" />
+      <File FileName="d:\miki\Pippo\Leviatan\trunk\Game\Game\Render\Renderable.cs" Line="22" Column="15" />
+      <File FileName="d:\miki\Pippo\Leviatan\trunk\Game\Game\Loader\COLLADALoader\Core\Transform\matrix.cs" Line="15" Column="65" />
+      <File FileName="Game\Loader\GLObject.cs" Line="1" Column="1" />
+      <File FileName="Game\Loader\Buffer.cs" Line="17" Column="35" />
+      <File FileName="Game\Loader\COLLADALoader\Core\AbstractElement\primitive_element.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Game" expanded="True">
+            <Option id="ShowAllFiles" value="False" />
+            <Option id="ShowVersionControlOverlays" value="True" />
+            <Node name="Loader" expanded="True" selected="True">
+              <Option id="ShowAllFiles" value="True" />
+            </Node>
+            <Node name="Render" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True">
+          <Node name="Game" expanded="True">
+            <Node name="Game" expanded="True">
+              <Node name="Game.Game" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
